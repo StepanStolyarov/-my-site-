@@ -7,7 +7,7 @@ from flask import Flask, render_template, url_for, request, flash
 
 
 app = Flask(__name__)
-
+app.config['SEKRET_KEY'] = 'rfrbrfhb;rfbb5g5;rfbh5;rbfrghbg5u4erherh4t5'
 
 @app.route('/')
 def begin():
