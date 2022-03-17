@@ -1,0 +1,29 @@
+def fact(n: int) -> int:
+
+    """
+    Возвращает факториал от числа n
+    """
+    if n<= 1:
+        return 1
+    return fact(n-1) * n
+
+def gcd(a: int, b: int) -> int:
+    """
+    Возвращает НОД(наибольший общий делитель чисел a и b, вычеслений по алгоритму Ефклида)
+    """
+
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+def power(a: int, b: int) -> int:
+    """
+    Возводит числа а в степень н
+    """
+    if n == 0:
+        return 1
+    elif n % 2 == 0:
+        return power(a * a,n // 2 ) * a
+    return pow(a, n-1) * a
+
+print(power(5, 3))
